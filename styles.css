@@ -343,15 +343,15 @@ object-fit: cover;
 
 .contact {
   background: #a6a6a6;
-  width: 92%;
-  height: 62vh;
+  width: 90%;
+  /* height: 62vh; */
   border-radius: 15px;
   
 }
 
 .both-contact {
-  width: 80%;
-  margin: 100px auto;
+  width: 95%;
+  margin: 20px auto;
   padding: 10px 2%;
   display: flex;
   flex-direction: row-reverse;
@@ -402,7 +402,7 @@ margin-bottom: 0;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 12px;
+  /* margin-top: 12px; */
 
 
 }
@@ -576,7 +576,11 @@ footer {
     top: 49%;
   }
   .header {
-    height: 94vh; 
+    height: 78vh; 
+    }
+
+    .contact {
+      height: 60vh;
     }
 }
 
@@ -600,7 +604,7 @@ footer {
   }
 
   .contact {
-    height: 93vh;
+    height: 73vh;
   }
 } 
 
@@ -616,7 +620,7 @@ footer {
     /* object-fit: cover; */
   }
   .contact {
-    height: 60vh;
+    height: 50vh;
   }
   .header {
     height: 109vh; 
