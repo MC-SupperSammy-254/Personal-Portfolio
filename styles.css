@@ -88,24 +88,24 @@ body {
 }
 
 .hamburger {
+  font-size: 16px;
   display: none;
   flex-direction: column;
   justify-content: space-between;
   height: 25px;
-  width: 29px;
+  width: 25px;
   border: none;
   background: transparent;
   cursor: pointer;
   z-index: 11;
   order: 2;
   color: #fff;
+  margin-right: 10px;
 }
 
-.hamburger span {
-  display: block;
-  height: 3px;
-  background: #fff;
-  border-radius: 3px;
+.hamburger:hover {
+  background: #a6a6a6;
+  border: 1px solid white;
 }
 
 
@@ -171,6 +171,8 @@ section h2 {
 }
 .about {
   margin: 3px;
+  /* display: flex; */
+  /* justify-items: center; */
 }
 
 .about p  {
@@ -261,6 +263,8 @@ section h2 {
 
 .testimonials .testimony  {
   background: #d4d0d0;
+  border-radius: 15px;
+  padding: 1px;
 }
 
 .testimonials .test1 {
@@ -309,13 +313,13 @@ object-fit: cover;
 
 .contact {
   background: #a6a6a6;
-  width: 90%;
+  width: 100%;
   /* height: 62vh; */
   border-radius: 15px;
   
 }
 
-.both-contact {
+.box-contact {
   width: 95%;
   margin: 20px auto;
   padding: 10px 2%;
@@ -363,6 +367,7 @@ margin-bottom: 0;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
 }
 
 .contact-form .button:hover {
@@ -475,9 +480,9 @@ footer {
     flex-direction: column;
     gap: 10px;
     position: absolute;
-    top: 50px;
-    left: 78%;
-    right: 0px;
+    top: 57px;
+    left: 74%;
+    right: 0.5px;
     background: #a6a6a6;
     z-index: 10;
     padding: 1em 0;
@@ -517,9 +522,10 @@ footer {
 
   .contact {
     height: 86vh;
+    width: 90%;
   }
 
-  .both-contact {
+  .box-contact {
     flex-direction: column-reverse;
   }
 
