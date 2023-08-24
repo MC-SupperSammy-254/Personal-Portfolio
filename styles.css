@@ -4,26 +4,18 @@ body {
   padding: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  /* background-color: cadetblue; */
 }
 
 .header {
   background-color: rgb(40, 37, 35);
-  /* background-color: #a6a6a6; */
-  /* background-image: url(images/logo\ mc.png); */
   width: 100% auto;
-  height: 135vh;
-  /* height: 50%; */
-  /* min-height: 90vh; */
+  /* height: 135; */
   color: #fff;
   text-align: center;
   padding: 0 0;
   position: relative;
 }
 .navbar {
-  top: 0;
-  left: 0;
-  right: 0;
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -32,7 +24,6 @@ body {
   align-items: center;
   width: 100%;
   z-index: 10;
-  /* background-color: #a6a6a6; */
   background: black;
 
 
@@ -40,7 +31,7 @@ body {
 }
 .navbar img{
   margin: auto 0;
-  height: 7%;
+  height: 49px;
   position: fixed;
   left: 3px;
   top: 0;
@@ -85,27 +76,23 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  /* padding-top: 100px; */
 }
 
 .profile-pic {
   width: 26%;
-  height: 54vh;
   border-radius: 50%;
   object-fit: cover;
   object-position: top;
-  margin-top: 120px;
-  margin-bottom: 50px;
-  /* position: relative; */
-  
+  margin-top: 140px;
+  margin-bottom: 50px;  
 }
 
 .hamburger {
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  height: 20px;
-  width: 25px;
+  height: 25px;
+  width: 29px;
   border: none;
   background: transparent;
   cursor: pointer;
@@ -130,11 +117,14 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+section h2 {
+  text-align: center;
+}
+
 .social-links a {
   font-size: 16px;
   color: #fff;
   background-color: blue;
-  /* background-color: rgb(164, 108, 4); */
   border: 1px solid;
   border-radius: 10px;
   padding: 3px;
@@ -148,22 +138,25 @@ section {
 }
 .home h1 {
   color: cyan;
+  margin-bottom: 40px;
 }
 .home h2 {
   color: rgb(218, 242, 234);
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
 
 .home h4 {
   color: rgb(78, 241, 241);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
+
+/* ------------------------About------------------------ */
 
 .about h1 {
   font-size: 30px;
 }
 
-.about h2 {
+.about h3 {
   color:#f75023;
   font-size: 22px;
 }
@@ -177,7 +170,7 @@ section {
   
 }
 .about {
-  margin: 0;
+  margin: 3px;
 }
 
 .about p  {
@@ -193,6 +186,29 @@ section {
   margin-top: 0;
 }
 
+.top-btn {
+  padding: 9px 30px;
+  border: 2px solid #f75023;
+  border-radius: 30px;
+  color: black;
+  background: transparent;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: ease .50s;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.top-btn:hover {
+  transform: scale(1.1);
+  background-color: #f75023;
+
+}
+
+/* ------------------------Services------------------------ */
+
 .container {
   max-width: 100%;
   display: flex;
@@ -204,8 +220,6 @@ section {
 
 .container .card {
   width: calc(33.33% - 30px);
-  /* width: calc(50% - 30px); */
-  /* width: 350px; */
   height: 465px;
   border: 1px solid #ddd;
   display: flex;
@@ -243,6 +257,19 @@ section {
   padding-left: 4px;
 }
 
+/* ------------------------Testimonials------------------------ */
+
+.testimonials .testimony  {
+  background: #d4d0d0;
+}
+
+.testimonials .test1 {
+    width: 300px;
+    height: 130px;
+}
+
+/* ------------------------Portfolio------------------------ */
+
 .gallery {
 position: relative;
 padding: 10px;
@@ -271,13 +298,7 @@ height: 320px;
 object-fit: cover;
 }
 
-.testimonials {
-  .test1 {
-    width: 300px;
-    height: 130px;
-    /* object-fit: cover; */
-  }
-}
+/* ------------------------Contact------------------------ */
 
 .contact-form input, .contact-form textarea, .contact-form button {
   display: block;
@@ -285,28 +306,91 @@ object-fit: cover;
   margin-top: 10px;
 }
 
-.top-btn {
-  /* display: inline-block; */
-  padding: 9px 30px;
-  border: 2px solid #f75023;
+
+.contact {
+  background: #a6a6a6;
+  width: 90%;
+  /* height: 62vh; */
+  border-radius: 15px;
+  
+}
+
+.both-contact {
+  width: 95%;
+  margin: 20px auto;
+  padding: 10px 2%;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 15px;
+}
+
+.contact h2 {
+font-size: 44px;
+width: 100%;
+text-align: center;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+.contact .contact-form input,
+.contact .contact-form textarea {
+  background: whitesmoke;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  word-spacing: 7px;
+  letter-spacing: 4px;
+  border: none;
+  border-radius: 8px;
+}
+
+.contact .contact-form textarea {
+  background: #eeeaea;
+  height: 92px;
+}
+
+.contact .contact-form .button {
+  width: 40%;
   border-radius: 30px;
-  color: black;
-  background: transparent;
-  letter-spacing: 1px;
-  font-size: 16px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: ease .50s;
+  border: 1px solid #f75023;
+  background: #d4d1d1;
+  border-color: #f75023;
   cursor: pointer;
-  /* width: 10px; */
-
+  font-weight: 500;
+  transition: background 0.3s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.top-btn:hover {
-  transform: scale(1.1);
+.contact-form .button:hover {
   background-color: #f75023;
-
+  color: white;
 }
+
+.contact-left,
+.contact-right {
+  flex-basis: 45%;
+  padding:  0 2%;
+  box-sizing: border-box;
+  margin-top: 0;
+}
+
+.contact-right p,
+.contact-left p {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-left i,
+.contact-right i {
+    margin-right: 10px;
+}
+
+/* ------------------------FAQ's------------------------ */
 
 .faq {
   background: rgb(234, 229, 229);
@@ -315,13 +399,12 @@ object-fit: cover;
 
 .faq ol > li {
   margin-bottom: 14px;
-  /* margin-top: 10px; */
 }
 
 .faq h3 {
   color: #2f2e31;
-  /* margin-bottom: 10px; */
 }
+
 .faq ol li ul {
   list-style-type: none;
   border-style: outset;
@@ -350,95 +433,7 @@ object-fit: cover;
   color: #2f2e31;
 }
 
-.contact {
-  background: #a6a6a6;
-  width: 90%;
-  /* height: 62vh; */
-  border-radius: 15px;
-  
-}
-
-.both-contact {
-  width: 95%;
-  margin: 20px auto;
-  padding: 10px 2%;
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
-  /* align-items: center; */
-  justify-content: space-between;
-  /* text-align: center; */
-  border-radius: 15px;
-}
-
-.contact h2 {
-font-size: 44px;
-width: 100%;
-text-align: center;
-margin-top: 0;
-margin-bottom: 0;
-
-}
-
-.contact .contact-form input,
-.contact .contact-form textarea {
-  background: whitesmoke;
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0;
-  word-spacing: 7px;
-  letter-spacing: 4px;
-  border: none;
-  border-radius: 8px;
-}
-
-.contact .contact-form textarea {
-  background: #eeeaea;
-  height: 12vh;
-  
-}
-
-.contact .contact-form .button {
-  width: 40%;
-  border-radius: 30px;
-  border: 1px solid #f75023;
-  background: #d4d1d1;
-  border-color: #f75023;
-  cursor: pointer;
-  font-weight: 500;
-  transition: background 0.3s;
-  /* text-align: center; */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  /* margin-top: 12px; */
-
-
-}
-.contact-form .button:hover {
-  background-color: #f75023;
-  color: white;
-}
-
-.contact-left,
-.contact-right {
-  flex-basis: 45%;
-  padding:  0 2%;
-  box-sizing: border-box;
-  margin-top: 0;
-}
-
-.contact-right p,
-.contact-left p {
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-}
-
-.contact-left i,
-.contact-right i {
-    margin-right: 10px;
-}
+/* ------------------------Footer------------------------ */
 
 footer {
   font-size: smaller;
@@ -450,8 +445,7 @@ footer {
 
 
 
-/* ******************************************************** */
-
+/* -----------------------------media screen(768)------------------------- */
 
 
 @media screen and (max-width: 768px){
@@ -481,10 +475,9 @@ footer {
     flex-direction: column;
     gap: 10px;
     position: absolute;
-    top: 60px;
+    top: 50px;
     left: 78%;
-    right: 0.5px;
-    /* top: 55px; */
+    right: 0px;
     background: #a6a6a6;
     z-index: 10;
     padding: 1em 0;
@@ -511,10 +504,7 @@ footer {
   }
 
   .profile-pic {
-    width: 50%;
-    height: 60vh;
     margin-top: 60px;
-    /* padding-top: 50%; */
   }
 
   .photos {
@@ -524,7 +514,6 @@ footer {
   .videos video {
     width: calc(50% - 4px); /* 2 videos per row for smaller screens */
   }
-
 
   .contact {
     height: 86vh;
@@ -548,11 +537,9 @@ footer {
   .container {
     justify-content: center;
   }
-  
 }
 
-  /* ************************************************ */
-
+  /* -----------------------------media screen(800)------------------------- */
 
   @media only screen and (max-width: 800px) {
     .container .card {
@@ -577,7 +564,9 @@ footer {
     top: 43%;
 }
   }
-/* *********************************************************** */
+
+
+/* -----------------------------media screen(300)------------------------- */
   
 @media only screen and (min-width: 300px) {
 
@@ -585,18 +574,21 @@ footer {
     top: 49%;
   }
   .header {
-    height: 94vh; 
+    height: 780px; 
     }
 
     .contact {
-      height: 75vh;
+      height: 500px;
     }
 
     .profile-pic {
-      /* width: 50%; */
-      height: 38vh;
+      width: 262px;
+      height: 262px;
   }
 }
+
+
+/* -----------------------------media screen(769)------------------------- */
 
  @media only screen and (min-width: 769px) {
     .container .card {
@@ -606,58 +598,39 @@ footer {
     }
 
     .profile-pic {
-      width: 35%;
-      height: 50vh;
+      width: 240px;
+      height: 240px;
   }
     
     .img-box {
     top: 43%;
   }
     .header {
-  height: 146vh; 
+  height: 696px; 
   }
 
   .contact {
-    height: 73vh;
+    height: 330px;
   }
 } 
 
-  /* ******************************************************** */
+/* -----------------------------media screen(1400)------------------------- */
 
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: 1400px) {
     .profile-pic {
-    /* position: absolute; */
-    /* top: 0; */
-    /* left: 0; */
-    width: 25%;
-    /* height: 48vh; */
-    /* object-fit: cover; */
+    width: 290px;
+    height: 290px;
   }
+
   .contact {
     height: 50vh;
   }
+
   .header {
-    height: 123vh; 
+    height: 363px; 
   } 
+
   .img-box {
     top: 45%;
   }
 }
-
-
-/* @media(max-width: 900px){
-  .profile-pic {
-    width: 50%;
-  }
-}
-
-@media(max-width: 1200px){
-  .profile-pic {
-    width: 50%;
-    /* height: 20vh; */
-    /* margin-top: 260px; */
-  /* }
-  .header {
-    height: 80vh;
-  }
-} */
